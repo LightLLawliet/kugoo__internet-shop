@@ -1,0 +1,18 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	padding: 0px 0px;
+	display: block;
+	font-family: "Jost";
+	padding: rem(15) rem(25);
+	background: #fff;
+	border-radius: 5px;
+	font-size: rem(16);
+	color: #6f73ee;
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+}

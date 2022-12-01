@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page page_home">
+			<section class="page__main-block main-block">
+				<div class="main-block__wrapper">
+					<div class="main-block__body">
+						<div class="main-block__slider">
+							<div class="main-block__swiper">
+								<div class="main-block__slide slide-main-block">
+									<div class="slide-main-block__content">
+										<div class="slide-main-block__new"><span>Новинка</span></div>
+										<h1 class="slide-main-block__title">Электросамокаты Kugoo Kirin от официального
+											дилера
+										</h1>
+										<div class="slide-main-block__text">с бесплатной доставкой по РФ от 1 дня</div>
+									</div>
+									<a href="" class="slide-main-block__button button">Перейти в католог</a>
+								</div>
+							</div>
+						</div>
+						<div class="main-block__media media-main-block">
+							<div class="media-main-block__tips">
+								<div data-tippy-content="Tip" class="media-main-block__tip media-main-block__tip-1">
+								</div>
+								<div data-tippy-content="Tip" class="media-main-block__tip media-main-block__tip-2">
+								</div>
+								<div data-tippy-content="Tip" class="media-main-block__tip media-main-block__tip-3">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-block__advantages advantages-main">
+				<div class="main-block__advantages__wrapper">
+					<div class="advantages-main__item">
+						<h2 class="advantages-main__title">Гарантия 1 год</h2>
+						<div class="advantages-main__text">на весь ассортимент</div>
+					</div>
+					<div class="advantages-main__item">
+						<h2 class="advantages-main__title">рассрочка</h2>
+						<div class="advantages-main__text">от 6 месяцев</div>
+					</div>
+					<div class="advantages-main__item">
+						<h2 class="advantages-main__title">Подарки</h2>
+						<div class="advantages-main__text">и бонусам к покупкам </div>
+					</div>
+					<div class="advantages-main__item advantages-item-icon">
+						<div class="advantages-main-icon icon-yandex"></div>
+						<div class="advantages-main__desc">
+							<h5 class="advantages-main__review-title">Яндекс отзывы</h5>
+							<div class="advantages-main__review-stars icon-star"><span>4,9</span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/_products-slider.htm',{
+			"title": "Электросамокаты"
+			})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

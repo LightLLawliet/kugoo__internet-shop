@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Каталог"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{})
+        <main class="page page_inner">
+            <div class="page__header">
+                <div class="page__wrapper">
+                    <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="" class="breadcrumbs__link">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="" class="breadcrumbs__link">Каталог</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <span class="breadcrumbs__current">Электросамокаты</span>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="page__image">
+                        <h1 class="page__title title">Электросамокаты Kugoo Kirin</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog">
+                <div class="catalog__wrapper">
+                    <div class="catalog__body">
+                        <div class="catalog__filter filter-catalog">
+                            <div class="filter-catalog__title">Фильтр</div>
+                            <div data-spollers class="filter-catalog__items">
+                                <div class="filter-catalog__price price-filter">
+                                    <button type="button" data-spoller class="price-filter__title"></button>
+                                    <div class="price-filter__body">
+                                        <div class="price-filter__inputs">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="price-filter__input">
+                                            <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="" class="price-filter__input">
+                                        </div>  
+                                        <div id="price-range" class="price"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__content">
+                            <div class="catalog__control">
+                                <select name="form[]" class="control">
+                                    <option value="1" selected>По популярности</option>
+                                    <option value="2">По возрастанию цены</option>
+                                    <option value="3">По убыванию цены</option>
+                                    <option value="4">По размеру</option>
+                                </select>
+                            </div>
+                            <div class="catalog__products">
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="product-card">
+                                    <a href="" class="product-card__image">
+                                        <img src="@img/samokat__item.png" alt="samokat">
+                                        <span class="product-card__image-action-green">Новинка</span>
+                                        <span class="product-card__image-balance icon-balance-law-svgrepo-com"></span>
+                                    </a>
+                                    <div class="product-card__body">
+                                        <h4 class="product-card__title">
+                                            <a href="" class="product-card__title">Kugoo Kirin M4</a>
+                                        </h4>
+                                        <div class="product-card__info info-product-card">
+                                            <div class="info-product-card__energy icon-mah"><span>2000 mAh<span></div>
+                                            <div class="info-product-card__power icon-grey__lightning"><span>1,2
+                                                    л.с.<span></div>
+                                            <div class="info-product-card__speed icon-speed"><span>60 км/ч<span></div>
+                                            <div class="info-product-card__time icon-time"><span>5 часов<span></div>
+                                        </div>
+                                        <div class="product-card__footer">
+                                            <div class="product-card__prices">
+                                                <p class="product-card__unrelevant-price">39 900 ₽</p>
+                                                <p class="product-card__relevant-price">29 900 ₽</p>
+                                            </div>
+                                            <div class="product-card__actions">
+                                                <a href="" class="product-card__compare icon-cart_up"></a>
+                                                <a href="" class="product-card__favorite icon-favorites"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-card__buy">
+                                            <button class="product-card__button">Купить в 1 клик</button>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>
